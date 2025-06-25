@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trường Đại Học Chí Đức</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo-row">
+      <img src="image/logo.jpg" alt="Logo" class="logo-img">
+      <div class="text-block">
+        <h1 id="title">TRƯỜNG ĐẠI HỌC CHÍ ĐỨC</h1>
+        <div class="slogan-lang">
+          <p id="slogan">Kiến thức vững vàng - Đạo đức trọn vẹn</p>
+          <div class="lang-buttons">
+            <button onclick="switchLanguage('vi')"><img src="image/covn.png" alt="VN Flag"/></button>
+            <button onclick="switchLanguage('en')"><img src="image/coanh.png" alt="UK Flag"/></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="nav-links">
+      <a href="https://vhu.edu.vn/" id="nav1">Thông tin trường</a>
+      <a href="https://qldt.vhu.edu.vn/vi/noi-dung-chuong-trinh" id="nav2">Ngành đào tạo</a>
+      <a href="https://tuyensinh.vhu.edu.vn/dai-hoc-chinh-quy/" id="nav3">Hình thức xét tuyển</a>
+      <a href="https://nt.vhu.edu.vn/module/lien-he" id="nav4">Liên hệ hỗ trợ</a>
+    </div>
+    <a href="https://portal.vhu.edu.vn/login" class="login" id="login-text">Đăng nhập</a>
+  </nav>
+
+  <div class="main-container">
+    <div class="slideshow-container">
+      <img id="slideshow" src="image/a.png" alt="Slideshow">
+      <div class="dots-container" id="dots"></div>
+    </div>
+
+    <div class="events-container" id="events">
+      <div class="event-box">
+        <div class="event-info">
+          <h4 id="event1-title">Đại học Chí Đức tuyển sinh</h4>
+          <p id="event1-desc">Ngôi trường đầy sự sáng tạo nơi cho sinh viên thể hiện chất riêng.</p>
+        </div>
+      </div>
+      <div class="event-box">
+        <div class="event-info">
+          <h4 id="event2-title">Hội thảo dành cho sinh viên</h4>
+          <p id="event2-desc">Những buổi hội thảo với những khách mời sẽ mang lại cho sinh viên những kiến thức, kinh ngiệm và trải nghiệm mới mẻ.</p>
+        </div>
+      </div>
+      <div class="event-box">
+        <div class="event-info">
+          <h4 id="event3-title">Giải thể thao sinh viên Chí Đức</h4>
+          <p id="event3-desc">Thường xuyên tổ chức các hoạt động thể thao cho sinh viên.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="calendar-wrapper">
+    <div class="calendar-event">
+      <div class="calendar-time">
+        <div class="calendar-time-top">8:00</div>
+        <div class="calendar-time-bottom">8/07</div>
+      </div>
+      <div class="calendar-info">
+        <h4 id="calendar1-title">Ngày Hội giao lưu câu lạc bộ</h4>
+        <a id="calendar1-link" href="#">Đăng ký ngay</a>
+      </div>
+    </div>
+
+    <div class="calendar-event">
+      <div class="calendar-time">
+        <div class="calendar-time-top">9:00</div>
+        <div class="calendar-time-bottom">15/07</div>
+      </div>
+      <div class="calendar-info">
+        <h4 id="calendar2-title">Ngày Hội đọc sách "Lan tỏa văn hóa đọc"</h4>
+        <a id="calendar2-link" href="#">Đăng ký ngay</a>
+      </div>
+    </div>
+
+    <div class="calendar-event">
+      <div class="calendar-time">
+        <div class="calendar-time-top">17:30</div>
+        <div class="calendar-time-bottom">26/07</div>
+      </div>
+      <div class="calendar-info">
+        <h4 id="calendar3-title">Cổ vũ Giải bóng đá nữ</h4>
+        <a id="calendar3-link" href="#">Đăng ký ngay</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <p>Trụ sở chính:</p>
+        <p>70 Nguyễn Quang, Phường 13, Quận Tân Bình, TP.HCM</p>
+      </div>
+      <div class="footer-right">
+        <p>Hotline: 0912111822</p>
+        <p>Email: cdu@edu.vn</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const translations = {
+      vi: {
+        title: "TRƯỜNG ĐẠI HỌC CHÍ ĐỨC",
+        slogan: "Kiến Thức Vững Vàng - Đạo Đức Trọn Vẹn",
+        "login-text": "Đăng nhập",
+        nav1: "Thông tin trường",
+        nav2: "Ngành đào tạo",
+        nav3: "Hình thức xét tuyển",
+        nav4: "Liên hệ hỗ trợ",
+        "event1-title": "Đại học Chí Đức tuyển sinh",
+        "event1-desc": "Ngôi trường đầy sự sáng tạo nơi cho sinh viên thể hiện chất riêng.",
+        "event2-title": "Hội thảo dành cho sinh viên",
+        "event2-desc": "Những buổi hội thảo với những khách mời sẽ mang lại cho sinh viên những kiến thức, kinh ngiệm và trải nghiệm mới mẻ.",
+        "event3-title": "Giải thể thao sinh viên Chí Đức",
+        "event3-desc": "Thường xuyên tổ chức các hoạt động thể thao cho sinh viên.",
+        "calendar1-title": "Ngày Hội giao lưu câu lạc bộ",
+        "calendar1-link": "Đăng ký ngay",
+        "calendar2-title": "Ngày Hội đọc sách \"Lan tỏa văn hóa đọc\"",
+        "calendar2-link": "Đăng ký ngay",
+        "calendar3-title": "Cổ vũ Giải bóng đá nữ",
+        "calendar3-link": "Đăng ký ngay"
+      },
+      en: {
+        title: "CHI DUC UNIVERSITY",
+        slogan: "Solid Knowledge – Complete Morality",
+        "login-text": "Login",
+        nav1: "About Us",
+        nav2: "Majors Offered",
+        nav3: "Admission Methods",
+        nav4: "Contact Support",
+        "event1-title": "Chi Duc University Admissions",
+        "event1-desc": "A creative school where students can express their individuality.",
+        "event2-title": "Student Workshop",
+        "event2-desc": "Workshops with guest speakers provide students with new knowledge, experience, and insight.",
+        "event3-title": "Chi Duc Sports Tournament",
+        "event3-desc": "Frequent sports activities are organized for students.",
+        "calendar1-title": "Club Exchange Day",
+        "calendar1-link": "Register now",
+        "calendar2-title": "Book Reading Festival \"Spreading the Reading Culture\"",
+        "calendar2-link": "Register now",
+        "calendar3-title": "Cheer for Women's Football",
+        "calendar3-link": "Register now"
+      }
+    };
+
+    function switchLanguage(lang) {
+      for (const id in translations[lang]) {
+        const el = document.getElementById(id);
+        if (el) el.textContent = translations[lang][id];
+      }
+    }
+
+    const imageList = ["image/a.png", "image/x.png", "image/z.jpg"];
+    let currentIndex = 0;
+    const slideImg = document.getElementById("slideshow");
+    const dotsContainer = document.getElementById("dots");
+    const eventBoxes = document.querySelectorAll(".event-box");
+
+    imageList.forEach((_, i) => {
+      const dot = document.createElement("div");
+      dot.classList.add("dot");
+      dot.addEventListener("click", () => {
+        currentIndex = i;
+        updateSlide();
+        resetInterval();
+      });
+      dotsContainer.appendChild(dot);
+    });
+
+    const dots = document.querySelectorAll(".dot");
+
+    function updateSlide() {
+      slideImg.src = imageList[currentIndex];
+      dots.forEach((dot, i) => {
+        dot.classList.toggle("active", i === currentIndex);
+      });
+      eventBoxes.forEach((box, i) => {
+        box.classList.toggle("active", i === currentIndex);
+      });
+    }
+
+    updateSlide();
+
+    let slideInterval = setInterval(() => {
+      currentIndex = (currentIndex + 1) % imageList.length;
+      updateSlide();
+    }, 5000);
+
+    function resetInterval() {
+      clearInterval(slideInterval);
+      slideInterval = setInterval(() => {
+        currentIndex = (currentIndex + 1) % imageList.length;
+        updateSlide();
+      }, 5000);
+    }
+  </script>
+</body>
+</html>

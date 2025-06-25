@@ -1,0 +1,281 @@
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      padding: 20px;
+      text-align: left;
+    }
+
+    .text-block p {
+      margin: 5px 0 0 0;
+      font-size: 1.3em;
+      color: midnightblue;
+    }
+
+    .logo-row {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .logo-img {
+      width: 150px;
+      height: 150px;
+      flex-shrink: 0;
+    }
+
+    .text-block {
+      flex: 1;
+    }
+
+    .text-block h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: midnightblue;
+    }
+
+    .slogan-lang {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .slogan-lang p {
+      margin: 0;
+      font-size: 1.3em;
+      color: midnightblue;
+    }
+
+    .lang-buttons {
+      display: flex;
+      gap: 5px;
+    }
+
+    .lang-buttons button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .lang-buttons img {
+      width: 30px;
+      height: 20px;
+      display: block;
+    }
+
+    .login {
+      display: flex;
+      justify-content: right;
+      font-size: 1.2em;
+      color: midnightblue;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 0;
+    }
+
+    .nav-links a {
+      flex: 1;
+      text-align: center;
+      font-size: 1.2em;
+      background-color: midnightblue;
+      color: white;
+      text-decoration: none;
+      padding: 20px 0;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .nav-links a:hover {
+      background-color:royalblue;
+      color: midnightblue;
+    }
+
+    footer {
+      background-color: midnightblue;
+      padding: 20px 40px;
+      border-top: 1px solid #ccc;
+      font-size: 0.95em;
+      color: #ccc;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .main-container {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      padding: 30px 5%;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .events-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 40%;
+      max-width: 400px;
+    }
+
+    .slideshow-container {
+      position: relative;
+      width: 55%;
+      max-width: 800px;
+    }
+
+    .slideshow-container img {
+      width: 100%;
+      height: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .dots-container {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      display: flex;
+      gap: 8px;
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #bbb;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .dot.active {
+      background-color: midnightblue;
+    }
+
+    .event-box {
+      display: flex;
+      height: 100%;
+      align-items: stretch;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      border: 2px solid transparent;
+      transition: border 0.3s;
+      flex: 1;
+    }
+
+    .event-box.active {
+      border-color: midnightblue;
+    }
+
+    .triangle {
+      position: absolute;
+      width: 100%;
+      height: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1em;
+    }
+
+    .event-info {
+      padding: 10px 15px;
+      background-color: #f9f9f9;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .event-info h4 {
+      margin: 0 0 5px;
+      font-size: 1.1em;
+      color: midnightblue;
+    }
+
+    .event-info p {
+      margin: 0;
+    }
+
+    .calendar-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 0 5%;
+      margin-top: 20px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .calendar-event {
+      width: calc(95%);
+      max-width: 1200px;
+      display: flex;
+      align-items: stretch;
+      border: 2px solid midnightblue;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    .calendar-time {
+      width: 80px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .calendar-time-top {
+      background-color: midnightblue;
+      color: white;
+      padding: 10px 0;
+      font-size: 1.1em;
+    }
+
+    .calendar-time-bottom {
+      background-color: white;
+      color: midnightblue;
+      padding: 10px 0;
+      font-size: 1em;
+      border-top: 1px solid midnightblue;
+    }
+
+    .calendar-info {
+      flex: 1;
+      background-color: #f9f9f9;
+      padding: 10px 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .calendar-info h4 {
+      margin: 0 0 8px;
+      font-size: 1.1em;
+      color: midnightblue;
+    }
+
+    .calendar-info a {
+      color: royalblue;
+      text-decoration: none;
+    }
